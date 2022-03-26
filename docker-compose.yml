@@ -11,6 +11,8 @@ services:
     environment:
       DOMAINS: 'uprun.upfg.net -> http://uprun_nginx:80'
       STAGE: 'production'
+      CLIENT_MAX_BODY_SIZE: 100M
+      HSTS_MAX_AGE: 120
     volumes:
       - https-portal-data:/var/lib/https-portal
       
