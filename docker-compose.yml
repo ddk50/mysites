@@ -9,7 +9,7 @@ services:
     networks:
       - web_network
     environment:
-      DOMAINS: 'uprun.upfg.net -> http://uprun_nginx:80'
+      DOMAINS: 'uprun.upfg.net -> http://uprun_nginx:80, takaha.si -> http://tak_nginx:80'
       STAGE: 'production'
       CLIENT_MAX_BODY_SIZE: 100M
       HSTS_MAX_AGE: 120
